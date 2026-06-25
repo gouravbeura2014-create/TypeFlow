@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>TypeFlow | Master Every Keystroke</title>
+
+<meta name="description"
+content="TypeFlow is a premium typing speed test with elegant design, real-time analytics, achievements, and beautiful animations.">
+
+<link rel="preconnect"
+href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Sora:wght@500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap"
+rel="stylesheet">
+
+<link rel="stylesheet"
+href="style.css">
+
+</head>
+
+<body>
+
+<!-- Navigation -->
+
+<header>
+
+<nav class="navbar">
+
+<div class="logo">
+
+TypeFlow
+
+</div>
+
+<div class="nav-right">
+
+<button id="themeToggle">
+
+🌙
+
+</button>
+
+</div>
+
+</nav>
+
+</header>
+
+<!-- Hero -->
+
+<section id="hero">
+
+<h1>
+
+Master Every
+<span>Keystroke</span>
+
+</h1>
+
+<p>
+
+Improve your typing speed with
+beautiful design, intelligent analytics,
+and premium performance tracking.
+
+</p>
+
+<button id="startBtn">
+
+Start Test
+
+</button>
+
+</section>
+
+<!-- Main Typing Interface -->
+
+<main id="typingArea"
+class="hidden">
+
+<!-- Top Stats -->
+
+<section class="stats">
+
+<div class="stat">
+
+<span class="label">
+
+Time
+
+</span>
+
+<h2 id="time">
+
+60
+
+</h2>
+
+</div>
+
+<div class="stat">
+
+<span class="label">
+
+WPM
+
+</span>
+
+<h2 id="wpm">
+
+0
+
+</h2>
+
+</div>
+
+<div class="stat">
+
+<span class="label">
+
+Accuracy
+
+</span>
+
+<h2 id="accuracy">
+
+100%
+
+</h2>
+
+</div>
+
+<div class="stat">
+
+<span class="label">
+
+Errors
+
+</span>
+
+<h2 id="errors">
+
+0
+
+</h2>
+
+</div>
+
+</section>
+
+<!-- Progress -->
+
+<div class="progressContainer">
+
+<div id="progressBar">
+
+</div>
+
+</div>
+
+<!-- Paragraph -->
+
+<section
+id="paragraphContainer">
+
+<p id="paragraph">
+
+Loading paragraph...
+
+</p>
+
+</section>
+
+<!-- Typing Input -->
+
+<textarea
+
+id="typingInput"
+
+placeholder="Start typing here..."
+
+autocomplete="off"
+
+spellcheck="false"
+
+autocorrect="off"
+
+autocapitalize="off">
+
+</textarea>
+
+</main>
+
+<!-- Result Screen -->
+
+<section
+
+id="resultScreen"
+
+class="hidden">
+
+<h1>
+
+Results
+
+</h1>
+
+<div class="resultGrid">
+
+<div class="resultCard">
+
+<h2 id="finalWPM">
+
+0
+
+</h2>
+
+<p>
+
+Words Per Minute
+
+</p>
+
+</div>
+
+<div class="resultCard">
+
+<h2 id="finalAccuracy">
+
+0%
+
+</h2>
+
+<p>
+
+Accuracy
+
+</p>
+
+</div>
+
+<div class="resultCard">
+
+<h2 id="betterPercent">
+
+0%
+
+</h2>
+
+<p>
+
+Better Than
+
+</p>
+
+</div>
+
+<div class="resultCard">
+
+<h2>
+
+40 WPM
+
+</h2>
+
+<p>
+
+Average Typist
+
+</p>
+
+</div>
+
+</div>
+
+<div class="summary">
+
+<h3 id="performanceMessage">
+
+Excellent!
+
+</h3>
+
+<p id="comparisonText">
+
+You typed faster than the average typist.
+
+</p>
+
+</div>
+
+<div class="buttons">
+
+<button id="restartBtn">
+
+Try Again
+
+</button>
+
+<button id="shareBtn">
+
+Share Result
+
+</button>
+
+</div>
+
+</section>
+
+<!-- Achievement Popup -->
+
+<div id="achievementPopup">
+
+🏆 Achievement Unlocked
+
+</div>
+
+<footer>
+
+<p>
+
+Made with ❤️ using HTML, CSS & JavaScript
+
+</p>
+
+</footer>
+
+<script src="paragraphs.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+
+  </html>
